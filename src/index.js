@@ -1,21 +1,22 @@
 import { h, app } from 'hyperapp'
 import { Enter, Exit } from '@hyperapp/transitions'
-import { div, blockquote, span } from '@hyperapp/html'
+import { div, blockquote, p } from '@hyperapp/html'
 import quotes from './quotes'
 
 const Quote = (props, message) => Enter(
   { time: 500, css: { opacity: 0, position: 'absolute', transform: 'scale(0.1, 0.1)' }},
   Exit({ time: 500, css: { opacity: 0, transform: 'scale(2, 2)', color: 'rgba(0, 0, 0, 0' } }, [
-    blockquote(props,
-      span(message)
-    )
+    blockquote(props, [
+      p(message.quote),
+      p(message.author)
+    ])
   ])
 )
 
 const rng = num => Math.floor(Math.random() * num)
 
 const state = {
-  quote: ['Keep Calm and Be RESTful'],
+  quote: [{ quote: 'Keep Calm and Be RESTful', author: 'John Doe' }],
   len: quotes.length,
 }
 
