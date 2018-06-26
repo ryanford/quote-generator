@@ -16,7 +16,10 @@ const Quote = (props, message) => Enter(
 const rng = num => Math.floor(Math.random() * num)
 
 const state = {
-  quote: [{ quote: 'Keep Calm and Be RESTful', author: 'John Doe' }],
+  quote: [{ 
+    quote: 'An inventor is simply a fellow who doesn\'t take his education too seriously.',
+    author: 'Charles Kettering' 
+  }],
   len: quotes.length,
 }
 
