@@ -1,7 +1,5 @@
-### Random Quote Generator
+The Odin Project misses @ryanford-frontend . Please come back to us soon and we will forgive you =)
 
-#### Random quotes built with Hyperapp
+Love, 
+Odin
 
-[Live Demo](https://ryanford-frontend.github.io/quote-generator/)
-
-Random quotes generated with HyperApp.
