@@ -24,12 +24,12 @@ const state = {
 }
 
 const actions = {
-  updateQuote: state => ({ quote: [quotes[rng(state.len)]] }),
+  updateQuote: state => ({ currentKey: state.currentKey + 1, quote: [quotes[rng(state.len)]] }),
 }
 
 const view = (state, actions) => div({}, [
   state.quote.map(q => (Quote(
-    { key: q, onclick: () => actions.updateQuote(state) }, q
+    { key: Date.now(), onclick: () => actions.updateQuote(state) }, q
   )))
 ])
 

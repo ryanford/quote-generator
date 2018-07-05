@@ -33,6 +33,7 @@ blockquote {
   justify-content: center;
   transition: 1s;
   backface-visibility: hidden;
+  position: absolute;
 }
 
 p {
