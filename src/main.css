@@ -18,6 +18,8 @@ div {
   display: flex;
   align-items: flex-end;
   justify-content: center;
+  -moz-user-select: -moz-none;
+  user-select: none;
 }
 
 blockquote {
@@ -34,10 +36,14 @@ blockquote {
   transition: 1s;
   backface-visibility: hidden;
   position: absolute;
+  -moz-user-select: -moz-none;
+  user-select: none;
 }
 
 p {
   text-align: center;
-  font-family: Helvetica;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
   font-style: italic;
+  -moz-user-select: -moz-none;
+  user-select: none;
 }
