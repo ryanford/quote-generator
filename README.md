@@ -2,7 +2,7 @@
 
 #### Random quotes built with Hyperapp
 
-[**Live Demo**](https://ryanford-dev.github.io/quote-generator/)
+[**Live Demo**](https://ryanford.github.io/quote-generator/)
 
 Attribution:
 
